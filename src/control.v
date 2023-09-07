@@ -10,6 +10,7 @@ module tt_um_uart_control (
 );
     assign uio_oe=0;
 	assign uio_out=0;
+	assign uo_out[7:4]=0;
     control dut (.clk(ui_in[6]), .rst(ui_in[5]), .ini(ui_in[4]), .ent(ui_in[3:0]), .sal(uo_out[3:0]));
 endmodule
 
